@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
+  <title>Restaurant Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-contact">
+
+  <!-- Navbar Section -->
+  <header>
+    <nav>
+      <div class="logo">
+          <img src="cross.png" alt="Logo">
+           <!-- Replace with your logo -->
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+          <img src="social.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="instagram.png" alt="Instagram" class="social-icon">
+        </a>
+      </div>      
+      <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="history.html">Nuestra Historia</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger-menu">
+      &#9776; <!-- This is the hamburger icon (three lines) -->
+    </div>
+  </header>
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h1 class="section-title">Contact Us</h1>
+
+            <div class="contact-content">
+                <form id="contact-form">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                  </form>
+                </section>
+    <!--Map and footer-->
+    <footer>
+      <div class="map">
+        <h2>Visit Us here:</h2>
+        <iframe class="map-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.544260622013!2d-3.7074667999999993!3d40.418945799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287c12757a53%3A0xda845c15e5e1272a!2sRestaurante%20Sidrer%C3%ADa%20Casa%20Parrondo!5e0!3m2!1sen!2ses!4v1732964543757!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+        </iframe>      </div>
+      
+      <div class="contact-details">
+          <h3>Contact Us</h3>
+          <ul>
+              <li>Address: 123 Flavor Street, Madrid, Spain</li>
+              <li>Phone: (+34) 912 345 678</li>
+              <li>Email: <a href="mailto:contact@casaparrondo.com">contact@casaparrondo.com</a></li>
+          </ul>
+      </div>
+  </footer>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
