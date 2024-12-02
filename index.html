@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
+  <title>Restaurant Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+         <!-- Navbar Section -->
+  <header>
+    <nav>
+      <div class="logo">
+          <img src="cross.png" alt="Logo">
+           <!-- Replace with your logo -->
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+          <img src="social.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="instagram.png" alt="Instagram" class="social-icon">
+        </a>
+      </div>      
+      <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="history.html">Nuestra Historia</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger-menu">
+      &#9776; <!-- This is the hamburger icon (three lines) -->
+    </div>
+  </header>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <div class="video-container">
+      <video class="background-video" autoplay muted loop>
+        <source src="cows.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="content-container">
+        <h2>Welcome to La Única</h2>
+        <p>Experience the finest Mexican cuisine.</p>
+        <button class="video-button" onclick="checkMenu()">Check the Menu</button>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <video class="background-video" autoplay muted loop>
+        <source src="historia.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="content-container">
+        <h2>Book Your Table</h2>
+        <p>Reserve your spot for an unforgettable evening.</p>
+        <button class="video-button" onclick="bookReservation()">Book Now</button>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <video class="background-video" autoplay muted loop>
+        <source src="RestauranteBeer.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="content-container">
+        <h2>Our Story</h2>
+        <p>Learn more about the history of La Única.</p>
+        <button class="video-button" onclick="aboutHistory()">About Us</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dish Section (Image Left, Content Right) -->
+ <!-- Image Section -->
+<section class="image-section">
+  <div class="image-container">
+      <img src="cuisine.png" alt="Dish Image">
+      <div class="img-content-container">
+          <h2>Delicious Mexican Cuisine</h2>
+          <p>Experience the rich flavors of Mexico with our traditional dishes.</p>
+          <button class="cta-button" onclick="checkMenu()">Explore Menu</button>
+      </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="title">
+   <h4>Where can you find us? </h4> 
+   <div class="title">
+  <p> Welcome to *La Bella Tavola*, where authentic Italian flavors and a cozy ambiance await you. Our menu features a variety of traditional dishes made with fresh, locally-sourced ingredients. From rich pastas to wood-fired pizzas, we bring the best of Italy to your table. We’re open every day from 12:00 PM to 10:00 PM, and you can reach us at (555) 123-4567 for reservations or inquiries. Come visit us today and experience the taste of Italy – we look forward to welcoming you!
+  </p> 
+  </div>
+   </p>
+  </div>
+
+  <div class="map-container">
+    <iframe class="map-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.544260622013!2d-3.7074667999999993!3d40.418945799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287c12757a53%3A0xda845c15e5e1272a!2sRestaurante%20Sidrer%C3%ADa%20Casa%20Parrondo!5e0!3m2!1sen!2ses!4v1732964543757!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+    </iframe>
+  </div>
+
+
+
+</div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>*La Bella Tavola*</h3>
+            <p>Your go-to place for authentic Italian cuisine.</p>
+        </div>
+        <div class="footer-middle">
+            <h4>Contact Us</h4>
+            <ul>
+                <li>Phone: (555) 123-4567</li>
+                <li>Email: info@labellatavola.com</li>
+                <li>Address: 123 Pasta Street, Rome, Italy</li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Follow Us</h4>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+      </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 *La Bella Tavola*. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+  <script src="script.js"></script>
